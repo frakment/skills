@@ -1,0 +1,29 @@
+{
+  "name": "@frakment/skills",
+  "version": "0.2.1",
+  "packageManager": "pnpm@12.14.0",
+  "description": "Provider-neutral agent skills for the Frakment component registry",
+  "homepage": "https://github.com/frakment/skills#readme",
+  "bugs": {
+    "url": "https://github.com/frakment/skills/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frakment/skills.git"
+  },
+  "license": "MIT",
+  "author": "The Frakment Authors (https://github.com/frakment)",
+  "files": [
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "changeset": "changeset",
+    "release": "changeset publish",
+    "version:packages": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3"
+  }
+}
