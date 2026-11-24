@@ -21,7 +21,8 @@
   "scripts": {
     "changeset": "changeset",
     "release": "changeset publish",
-    "version:packages": "changeset version"
+    "version:packages": "changeset version",
+    "check": "node scripts/validate-skills.mjs"
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.3"

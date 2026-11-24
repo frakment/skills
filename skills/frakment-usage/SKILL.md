@@ -1,7 +1,7 @@
 ---
 name: frakment-usage
 description: Provider-neutral instructions for discovering, inspecting, and installing Frakment web and Expo components through HTTP, MCP, or the CLI.
-version: 0.2.0
+version: 0.2.1
 ---
 
 # Frakment Usage
@@ -70,6 +70,7 @@ The web registry index response has this shape:
 ## Steps
 
 <!-- context-drift-ignore-next-line CD001 -->
+
 If `components.json` does not exist, initialize Frakment in the existing project before adding components.
 
 For web projects, run `npx frakment@latest init`; web components require React 19 and Tailwind CSS v4.

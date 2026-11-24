@@ -87,3 +87,15 @@ Maintainers and Developers may help review, but only the owner merges changes to
 See the [Frakment contributor governance guide](https://github.com/frakment/.github/blob/main/GOVERNANCE.md) for organization teams and repository access details.
 
 Link the UI documentation or submodule update pull request to the Skills source pull request so both changes can be reviewed and released together.
+
+## Skill metadata check
+
+Run the skill metadata check before opening a PR:
+
+```bash
+npm run check
+```
+
+The check validates each `SKILL.md` frontmatter (`name`, `description`, `version`), ensures the `name` matches its directory, and confirms the file is included in the npm package.
+
+Repo policy: the `version` in each `SKILL.md` must match the version in `package.json`. Bump both together or use Changesets so the release tooling keeps them in sync.
