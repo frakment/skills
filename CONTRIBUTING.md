@@ -40,9 +40,7 @@ All changes to `main` must be submitted through a pull request, including change
 
 The owner reviews every pull request and is the only person who merges to `main`.
 
-Maintainers and Developers may help review, but only the owner can update the protected default branch.
-
-The owner-only bypass is reserved for exceptional situations, and pull requests remain the normal path.
+Maintainers and Developers may help review, but only the owner merges changes to the protected default branch.
 
 See the [Frakment contributor governance guide](https://github.com/frakment/.github/blob/main/GOVERNANCE.md) for contributor levels, promotion, and repository access.
 
