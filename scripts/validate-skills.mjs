@@ -114,6 +114,20 @@ async function main() {
       console.error(`x ${e.message}`);
       hasError = true;
     }
+
+    const readmePath = path.join(root, 'README.md');
+    if (existsSync(readmePath)) {
+      const readme = await readFile(readmePath, 'utf8');
+      const expectedInstallPath = `node_modules/@frakment/skills/${relative}`;
+      if (!readme.includes(expectedInstallPath)) {
+        console.error(
+          `x README.md does not contain the expected install path: "${expectedInstallPath}"`
+        );
+        hasError = true;
+      } else {
+        console.log(`ok README install path matches for ${relative}`);
+      }
+    }
   }
 
   if (hasError) {
