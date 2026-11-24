@@ -36,6 +36,14 @@ Create a changeset with `npm run changeset` or `pnpm changeset`.
 
 ## Contributions
 
-Repository owners may push directly to `main`; all other contributors should submit a pull request.
+All changes to `main` must be submitted through a pull request, including changes from Developers and Maintainers.
+
+The owner reviews every pull request and is the only person who merges to `main`.
+
+Maintainers and Developers may help review, but only the owner can update the protected default branch.
+
+The owner-only bypass is reserved for exceptional situations, and pull requests remain the normal path.
+
+See the [Frakment contributor governance guide](https://github.com/frakment/.github/blob/main/GOVERNANCE.md) for contributor levels, promotion, and repository access.
 
 Link the UI documentation or submodule update pull request to the Skills source pull request so both changes can be reviewed and released together.
